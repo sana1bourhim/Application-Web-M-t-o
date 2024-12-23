@@ -1,0 +1,95 @@
+/* Remettre à zéro les marges et les paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #0c08df;
+  background-color: azure;
+  font-size: 200%;
+  width: 100%; /* Assure que l'élément occupe toute la largeur */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 10px 0; /* Ajoute un peu de padding (facultatif) pour rendre l'apparence plus agréable */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+h2{
+  color:black;
+  font-style:oblique;
+  margin-top: 50px;
+}
+.Grand-titre{
+  color: #0c08df;
+}
+p{
+  color:black;
+  background-color: aliceblue;
+  border: 1px solid rgb(50, 20, 220);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Style de base pour le corps de la page */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items:baseline;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pseudo-élément pour l'image de fond */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/meteo.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Ajustez l'opacité selon vos besoins */
+}
+
+
+
+/* Style spécifique pour l'application */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+input {
+  padding: 11px;
+  margin-right: 10px;
+  border: 1px solid #8f8a8a;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour les éléments de code (facultatif) */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #08dfb8;
+}
